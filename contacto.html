@@ -13,14 +13,15 @@
      	   <div style="background: #212121">	
      	 	   <nav class="navbar navbar-expand-lg navbar-light">
                   <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <button style="background: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div  class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                          <h5><a style="color: white" class="nav-item nav-link" href="index.html"><strong>sobre mi</strong></a></h5>
-                          <h5><a style="color: white" class="nav-item nav-link" href="curriculumFabri.pdf">curriculum</a></h5>
-                          <h5><a style="color: white" class="nav-item nav-link" href="contacto.html">contacto</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="index.html">Sobre mi</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="curriculumFabri.pdf">Mi CV</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="contacto.html">Contacto</a></h5>
                           <h5><a style="color: white" class="nav-item nav-link" href="cursos.html">Mis cursos</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="analitico.pdf">Mi Analitico Secundario</a></h5>
                      
                   </div>
                </nav>
@@ -36,7 +37,7 @@
                           </div>
                           <div class="form-group">
                              <label for="formGroupExampleInput2">Mail</label>
-                             <input id="mail" type="mail" name="mail" class="form-control" id="formGroupExampleInput2" placeholder="Mail">
+                             <input id="mail" type="email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="example@example.com">
                           </div>
                           <div class="form-group">
                              <label for="formGroupExampleInput2">Mensaje</label>
@@ -64,28 +65,29 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/2be8605e79.js"></script>
    <script>
-       function valida(f){
-                  ok=true;
-                  msg="falta llenar los campos: ";
 
-                  if(f.elements['nombre'].value=""){
-                    ok=false;
-                    msg+="_nombre\n"
-                  }
-                  if(f.elements['mensaje'].value=""){
-                    ok=false;
-                    msg+="_mensaje\n"
-                  }
-                  if(f.elements['mail'].value=""){
-                    ok=false;
-                    msg+="_mail\n"
-                  }
-                  
-                  if (ok==false){
-                    alert(msg);
-                    return ok;
-                     }
-                 }
+          function valida(v){
+              var ok=true;
+              var msg="falta ingresar datos en:\n";
+                if (v.elements["nombre"].value=="") {
+                      msg += "_nombre\n";
+                      ok=false;
+                }
+                if (v.elements["mail"].value=="") {
+                      msg += "_mail\n";
+                      ok=false;
+                }
+                if (v.elements["mensaje"].value=="") {
+                      msg += "_mensaje\n";
+                      ok=false;
+                }
+                if (ok==false){
+                     alert(msg);
+                     return ok;
+                }else{
+                  alert('el mail fue enviado');
+                } 
+          }
    </script>
 </body>
 </html>
