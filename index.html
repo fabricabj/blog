@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog personal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background: url('http://1.bp.blogspot.com/-SMEg_MrA2RE/UNuWQMavjsI/AAAAAAAAyBI/MiTAkLO5Lfg/s1600/1360x768+-+Paisaje+Wallpaper+(12).jpg');">
+
+   <div>
+     	   <div style="background: #212121">	
+     	 	   <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div  class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <h5><a style="color: white" class="nav-item nav-link" href="index.html"><strong>sobre mi</strong></a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="curriculumFabri.pdf">curriculum</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="contacto.html">contacto</a></h5>
+                          <h5><a style="color: white" class="nav-item nav-link" href="cursos.html">Mis cursos</a></h5>
+                  </div>
+               </nav>
+           </div>
+           <div style="padding-top: 80px" class="row justify-content-around">
+                <div align="center" class="col-md-6 offset-md-1 col-sm-4  align-self-center div-circle">
+                    <img class="imgF" src="img/fabri.jpg" class="rounded-circle">
+                </div> 
+                <div  id="fc" class="col-md-4">
+                    <h3>
+                       <i></i>
+                    </h3>
+                </div>
+           </div>
+   </div>       	          
+   <footer class="social">
+       <center style="background: #fff">
+            <h1><strong>redes sociales</strong><br>
+                <a href="https://www.instagram.com/fabricabj_97/" target="_blank"><i class="fab fa-instagram ins"></i></a>
+                <a href="https://www.facebook.com/fabricio.colavella" target="_blank"><i class="fab fa-facebook fac"></i></a>
+                <a href="https://www.linkedin.com/in/fabricio-colavella-0bbb46191/" target="_blank"><i class="fab fa-linkedin lin"></i></a>
+                <a href="https://wa.me/541140397424" target="_blank"><i class="fab fa-whatsapp wsp"></i></a>
+            </h1>
+       </center>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/2be8605e79.js"></script>
+   <script>
+     	var text="Mi nombre es Fabricio Colavella y tengo 21 años,soy estudiante de la carrera analista de sistemas en el instituto tecnologico beltran,actulmente estoy cursando mi 2do año de 3."
+        var word = text.split("");
+        var i = 0;
+        var interval = setInterval(writeText, 80 );
+        function writeText() {
+            var p = document.getElementsByTagName("i")[0];
+            if (i < word.length) {
+                 p.innerHTML += word[i];
+                 i++;
+            }else{
+               clearInterval(interval);
+            }
+        }
+   </script>
+</body>
+</html>

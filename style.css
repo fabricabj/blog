@@ -1,0 +1,120 @@
+footer{
+			position: relative;
+			align-self: flex-end;
+			line-height: 1;
+			width: 100%;
+			bottom: -100px;
+
+				}
+		.imgF{
+			width: 50%;
+			border-radius: 250px;
+			border: solid;
+            border-color: #212121;
+		}
+		.social{
+	        margin-right: 10px;
+
+        }
+        .social h1{
+	        color:#000;
+        }
+        .social a{
+            font-size: 45px;
+            color:#000;
+            text-decoration: none;
+ 
+        }
+        .social a>.fac:hover{
+            color:#0d47a1;
+ 
+        }
+        .social a>.ins:hover{
+            color:#c51162;
+            text-decoration: none;
+        }
+        .social a>.twt:hover{
+            color:#2196f3;
+            text-decoration: none;
+        }
+        .social a>.wsp:hover{
+            color:green;
+            text-decoration: none;
+        }
+        .social a>.lin:hover{
+            color:#0d47a1;
+            text-decoration: none;
+        }
+        #fc{
+          border:5px dashed #cfd8dc;
+          color: white;
+          border-radius: 40px;
+          background-color:#212121;
+          padding: 2%;
+        }
+        .row{
+	       padding: 0px;
+	       margin: 0px;
+        }
+        .contac{
+            background: #212121;
+            color:white;
+            
+            padding: 20px;
+            border:5px dashed #cfd8dc;
+            border-radius: 35px;
+        }
+        .contac input{
+            width: 100%;
+        }
+        .contac button{
+            width: 50%;
+            border-radius: 20px;
+            border:solid;
+            border-color: white;
+            background: #121212;
+            color: white;
+            font-size: 25px;
+        }
+        .contac button:hover{
+            background: white;
+            color: black;
+            border:solid;
+            border-color: black;
+        }
+        .imgs img{
+            width: 200px;
+            height: 200px;
+        }
+        .cursos ul li{
+            float:left;
+            margin:15px;
+        }
+        .cursos h3{
+            text-align-last: center;
+        }
+        ul{
+            list-style: none;
+        }
+        .imgs a{
+            color: #fff;
+        } 
+        .btn{
+            width: 80%;
+            border-radius: 20px;
+            border:solid;
+            border-color: white;
+            background: #121212;
+            color: white;
+            font-size: 20px;
+
+        }
+        .btn:hover{
+            background: #e0e0e0;
+            border:solid;
+            border-color: #000;
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+        }
